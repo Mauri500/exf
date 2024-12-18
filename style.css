@@ -1,0 +1,293 @@
+.navbar{
+    padding: 30px;
+    font-size:25px;
+}
+.navbar-brand{
+    padding-left: 25px;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;  
+}
+.nav-link:hover{
+   color:white !important; /*!importantsobreescribe los estilos bootstrap y otorga prioridad al comando*/
+   font-weight: bold;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.personal h1{
+    font-family: 'Agu Display';
+    color: brown;
+}
+.personal h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.foto-personal{
+    border-radius: 50%;
+    width: 200px;
+    height: 220px;
+    margin: 5px;
+}
+.info{
+    background-color: #e03444;
+    height: 400px;
+    padding: 10px;
+}
+.info .container {
+    max-width: 600px;
+}
+.container h2{
+    font-family: 'Agu Display';
+    color: white;
+}
+.container p{
+    padding-top: 10px;
+    color: white;
+}
+.experiencia{
+    padding: 20px 20px 30px 30px;
+    color: black;
+}
+.experiencia i{
+    color: rgb(29, 235, 29);
+    background-color: black;
+    border-radius: 50%;
+    font-size: 4vh;
+    padding: 10px 15px;
+}
+.titulo-exp{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.experiencia p{
+    color: black;
+}
+.experiencia .columna{
+    border: 1px solid grey;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.badges{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+.badge{
+    margin: 3px;
+}
+#proyectos{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#proyectos h2{
+    font-family: 'Agu Display';
+    color: brown;
+}
+#proyectos h3{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.proyecto-reciente{
+    position: relative; /*Acomoda los elementos de forma relativa, manteniendo un espaciado similar*/
+}
+#proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    transition: all 0.5s ease; /*efecto de desvanecimiento al pasar el cursor y quitarlo*/
+}
+.previsualizar{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.previsualizar p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: black;
+}
+.proyecto-reciente:hover img{ /*Opacidad al pasar el cursor*/
+    opacity: 0.4;
+}
+.proyecto-reciente:hover .previsualizar{ /*Opacidad de los íconos de Bootstrap al pasar el cursor sobre las imágenes de Proyecto*/
+    opacity: 1;
+}
+.previsualizar i{ /*estilos para los iconos de Bootstrap*/
+    color: black;
+    font-size: 60px;
+    margin: 15px;
+}
+.articulos h2{
+    font-family: 'Agu Display';
+    color: brown;
+    padding-bottom: 20px;
+}
+.articulos .card-header {
+    font-weight: bold;
+}
+.boton-articulos{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#testimonios h2{
+    font-family: 'Agu Display';
+    color: brown;
+    padding-bottom: 20px;
+}
+#testimonios h3{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.testimonios .carousel{
+    max-width: 800px;
+}
+.carousel-item{
+    height: 450px;
+}
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonio-img{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+.testimonio-texto{
+    max-width: 60%;
+    font-size: 20px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.testimonios p{
+    color: black;
+}
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+.testimonio-info p{
+    margin-bottom: 0;
+}
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+    color: gray;
+}
+#contacto{
+    margin-top: 50px;
+}
+#contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 30px;
+}
+.contacto .caja {
+    background-color:deepskyblue;
+    border-radius: 10px;
+}
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contacto .hablemos{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+.contacto button{
+    color: white;
+    border: 2px solid white;
+    background-color: deepskyblue;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+    background-color: white;
+    color: red;
+}
+.contacto button i{
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i{
+    color: red;
+}
+footer{
+    min-height: 500px;
+    background-color: black;
+}
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+.footer-text{
+    font-size: 25px;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.redes-sociales a{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+.redes-sociales a:hover i{
+    color: black;
+}
+.copyright{
+    font-size: 15px;
+    color: grey;
+    padding: 20px;
+}
